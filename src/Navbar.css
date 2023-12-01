@@ -1,0 +1,37 @@
+nav ul {
+    list-style-type: none;
+   
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+/* Navbar.css */
+
+.navbar {
+   
+ /* Makes the navbar items horizontal */
+    background-color: #333; /* Background color for the navbar */
+    padding: 10px; /* Add padding for spacing */
+  }
+  
+  .navbar a {
+    color: white; /* Text color for the links */
+    text-decoration: none; /* Remove underlines from links */
+    margin-right: 20px; /* Add spacing between links */
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+
+
+
+  .text-align {
+    text-align: center;
+
+  }
+  
+
+  

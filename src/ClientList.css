@@ -1,0 +1,17 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates four columns */
+    gap: 10px; /* Adds space between items */
+}
+
+.grid-heading {
+    font-weight: bold; /* Styling for heading */
+    padding: 8px; /* Example styling */
+    text-align: center; /* Example styling */
+}
+
+.grid-item {
+    border: 1px solid #ccc; /* Example styling */
+    padding: 8px; /* Example styling */
+    text-align: center; /* Example styling */
+}

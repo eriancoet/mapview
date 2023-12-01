@@ -1,0 +1,23 @@
+.layout-container {
+    display: flex; /* Use Flexbox */
+    align-items: start; /* Align items to the start of the container */
+}
+
+.Navbar {
+    flex: 1; /* Takes up 1 portion of the space */
+    /* Add any additional styling for your navbar here */
+}
+
+.ClientList {
+    flex: 3;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.Map {
+    flex: 1; /* Takes up 2 portions of the space, making it larger than the navbar */
+    /* Add any additional styling for your map here */
+}
+
+

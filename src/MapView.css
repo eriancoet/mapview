@@ -1,0 +1,17 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.map {
+    width: 50%; /* Adjust this value as needed */
+    margin-right: 10px; /* Optional: Adds some space between the map and the client list */
+}
+
+.client-list {
+    flex: 1; /* This will allow the ClientList to take up the remaining space */
+    margin-left: 10px; 
+    display: inline-flex
+   /* Optional: Adds some space between the map and the client list */
+}
