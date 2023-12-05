@@ -1,17 +1,18 @@
+/* Existing styles for larger screens */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Creates four columns */
-    gap: 10px; /* Adds space between items */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
 }
 
-.grid-heading {
-    font-weight: bold; /* Styling for heading */
-    padding: 8px; /* Example styling */
-    text-align: center; /* Example styling */
-}
+/* Responsive styles for mobile screens */
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
 
-.grid-item {
-    border: 1px solid #ccc; /* Example styling */
-    padding: 8px; /* Example styling */
-    text-align: center; /* Example styling */
+    .grid-heading, .grid-item {
+        text-align: left; /* Adjust text alignment as needed */
+        padding: 1rem; /* Adjust padding as needed */
+    }
 }

@@ -1,17 +1,21 @@
+
+
+/* Existing styles for larger screens */
 .content {
     display: flex;
     justify-content: center;
     align-items: start;
 }
 
-.map {
-    width: 50%; /* Adjust this value as needed */
-    margin-right: 10px; /* Optional: Adds some space between the map and the client list */
-}
+/* Responsive styles for mobile screens */
+@media screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.client-list {
-    flex: 1; /* This will allow the ClientList to take up the remaining space */
-    margin-left: 10px; 
-    display: inline-flex
-   /* Optional: Adds some space between the map and the client list */
+    .map, .client-list {
+        width: 100%; /* Full width on smaller screens */
+        margin: 0; /* Adjust as needed */
+    }
 }
