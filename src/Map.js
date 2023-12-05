@@ -18,19 +18,19 @@ const AnyReactComponent = ({ text }) => (
 );
 
 const Map = () => {
-  const clients = [
-    { id: 1, lat: -33.9079, lng: 18.4098, name: "Jon Doe" }, // Green Point, Cape Town
-    { id: 2, lat: -33.9079, lng: 18.7098, name: "Jack Burn" },
-    // ... add more clients
-  ];
-
-  const defaultProps = {
-    center: {
-      lat: clients[0].lat, // Set the default center to the lat of Client 1
-      lng: clients[0].lng  // Set the default center to the lng of Client 1
-    },
-    zoom: 11
-  };
+    const clients = [
+      { id: 1, lat: -33.9279, lng: 18.4478, name: "Jon Doe" }, // Woodstock, Cape Town
+      { id: 2, lat: -33.9079, lng: 18.7098, name: "Jack Burn" },
+      // ... add more clients
+    ];
+  
+    const defaultProps = {
+      center: {
+        lat: clients[0].lat,
+        lng: clients[0].lng
+      },
+      zoom: 16 // Adjusted zoom level for closer view
+    };
 
   return (
     <div style={{ height: '100vh', width: '100%' }}>
