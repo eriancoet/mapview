@@ -1,9 +1,0 @@
-let = [{
-    name: John doe,
-    Address: 'New york'
-    },
-    {
-    name: Jane doe,
-    Address: 'New Orleans'
-    },
-    ]
