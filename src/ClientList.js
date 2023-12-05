@@ -4,6 +4,15 @@ import './ClientList.css'; // Import the CSS for styling
 const data = [
   { name: 'John Doe', address: 'Albert road, woodstock', hits: 3, lastSeen: '2023-01-01' },
   { name: 'Jane Smith', address: "Albert road, woodstock", hits: 2, lastSeen: '2023-01-02' },
+  { name: 'JJ Odie', address: "Albert road, woodstock", hits: 2, lastSeen: '2023-01-02' },
+  { name: 'Jan Boom', address: "Albert road, woodstock", hits: 2, lastSeen: '2023-01-02' },
+  { name: 'Koos Kombuis', address: "Albert road, woodstock", hits: 2, lastSeen: '2023-01-02' },
+  { name: 'Manowar Chal', address: "Albert road, woodstock", hits: 2, lastSeen: '2023-01-02' },
+  { name: 'Goldie Spree', address: "Albert road, woodstock", hits: 2, lastSeen: '2023-01-02' },
+  { name: 'Kally Softmore', address: "Albert road, woodstock", hits: 2, lastSeen: '2023-01-02' },
+  { name: 'Floors Fisher', address: "Albert road, woodstock", hits: 2, lastSeen: '2023-01-02' },
+  { name: 'Buck Marlsee', address: "Albert road, woodstock", hits: 2, lastSeen: '2023-01-02' },
+
   // ... other data entries
 ];
 
