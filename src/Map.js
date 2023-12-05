@@ -1,6 +1,8 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
 
+
+
 const AnyReactComponent = ({ text }) => (
   <div style={{
     color: 'white',
@@ -19,8 +21,8 @@ const AnyReactComponent = ({ text }) => (
 
 const Map = () => {
     const clients = [
-      { id: 1, lat: -33.9279, lng: 18.4478, name: "Jon Doe" }, // Woodstock, Cape Town
-      { id: 2, lat: -33.9079, lng: 18.7098, name: "Jack Burn" },
+      { id: 1, lat: -33.9266, lng: 18.4499, name: "Jon Doe" }, // Woodstock, Cape Town
+      { id: 2, lat: -33.9266, lng: 18.4490, name: "Jack Burn" },
       // ... add more clients
     ];
   
@@ -29,7 +31,7 @@ const Map = () => {
         lat: clients[0].lat,
         lng: clients[0].lng
       },
-      zoom: 16 // Adjusted zoom level for closer view
+      zoom: 18 // Adjusted zoom level for closer view
     };
 
   return (
