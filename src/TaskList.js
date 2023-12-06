@@ -10,7 +10,7 @@ function TaskList() {
     <div className="layout-container">
     <Navbar className="Navbar" /> 
    
-    <Map className="Map" />
+ 
     <ClientList className="ClientList" />
 
     </div>

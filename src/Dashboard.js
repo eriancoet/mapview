@@ -9,9 +9,7 @@ function Dashboard() {
    
         <div className="layout-container">
     <Navbar className="Navbar" /> 
-   
-    <Map className="Map" />
-    <ClientList className="ClientList" />
+   <h1>Dashboard</h1>
 
     </div>
   );

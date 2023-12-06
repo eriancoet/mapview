@@ -15,9 +15,11 @@ const AnyReactComponent = ({ imgSrc, text }) => (
 const Map = () => {
     const clients = [
         { id: 1, lat: -33.9266, lng: 18.4499, img: markerImage1, name: "Jon Doe" },
-        { id: 2, lat: -33.9265, lng: 18.4490, img: markerImage2, name: "Jack Burn" },      
-        { id: 5, lat: -33.9264, lng: 18.4460, img: markerImage2, name: "Koos Kombuis" },
-        { id: 6, lat: -33.9266, lng: 18.4440, img: markerImage2, name: "Manowar Chal" },
+        { id: 2, lat: -33.9265, lng: 18.4495, img: markerImage2, name: "Jack Burn" }, 
+        { id: 3, lat: -33.9265, lng: 18.4487, img: markerImage2, name: "JJoe Cocker" },
+        { id: 4, lat: -33.9265, lng: 18.4480, img: markerImage2, name: "BoesMan Mob" },     
+        { id: 5, lat: -33.9264, lng: 18.4475, img: markerImage2, name: "Koos Kombuis" },
+        { id: 6, lat: -33.9266, lng: 18.4470, img: markerImage2, name: "Manowar Chal" },
         { id: 7, lat: -33.9266, lng: 18.4460, img: markerImage1, name: "Goldie Spree" },
         { id: 8, lat: -33.9266, lng: 18.4455, img: markerImage2, name: "Kally Softmore" },
         { id: 9, lat: -33.9266, lng: 18.4450, img: markerImage1, name: "Floorwis Butch" },

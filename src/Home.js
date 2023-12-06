@@ -11,8 +11,8 @@ function Home() {
   return (
     <div className="layout-container">
     <Navbar className="Navbar" />    
-    <Map className="Map" />
-    <ClientList className="ClientList" />
+    <h1>Home</h1>
+  
 
     </div>
 
