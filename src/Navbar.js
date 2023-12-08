@@ -30,6 +30,14 @@ function Navbar() {
                     <li className='nav-item'><NavLink to="/MapList" activeClassName="active">Map List</NavLink></li>
                     <li className='nav-item'><NavLink to="/TaskList" activeClassName="active">Task List</NavLink></li>
                 </ul>
+                <ul className="BottomMenu">
+                    <li>
+                        <NavLink to="/Profile" activeClassName="active">Profile Icon</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/Account" activeClassName="active">Account</NavLink>
+                    </li>
+                </ul>
             </nav>
         </>
     );

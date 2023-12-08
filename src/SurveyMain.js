@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Survey.css';
-
+import './Home.css';
 
 function SurveyForm() {
     const [formData, setFormData] = useState({
@@ -23,6 +23,7 @@ function SurveyForm() {
     return (
         <form onSubmit={handleSubmit}>
             <div>
+                <h1>Survey Form</h1>
                 <label htmlFor="name">Name:</label>
                 <input
                     type="text"

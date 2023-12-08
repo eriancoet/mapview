@@ -32,6 +32,11 @@
   z-index: 1001;
   /* Additional styling as needed */
 }
+
+.nav-item {
+  color: rgb(3, 146, 249); /* Sets default link color to white */
+  text-decoration: none; /* Optional */
+}
 .nav-item a {
   color: white; /* Sets default link color to white */
   text-decoration: none; /* Optional */
@@ -62,7 +67,15 @@
 /* Additional styles for links if needed */
 .navbar ul li a {
   text-decoration: none; /* Removes underline from links */
-  color: black; /* Sets text color */
+  color: rgb(56, 126, 246); /* Sets text color */
   display: block; /* Makes the entire area of the list item clickable */
   padding: 5px; /* Adds padding for better clickability and visual appeal */
+}
+
+.BottomMenu {
+  position: fixed;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+
 }

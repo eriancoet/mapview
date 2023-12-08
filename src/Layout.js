@@ -6,12 +6,19 @@ import ClientList from './ClientList';
 
 function Layout() {
   return (
+    <div>
+  
     <div className="layout-container">
+  
     <Navbar className="Navbar" /> 
-   
+  
     <Map className="Map" />
+    <div>
+    <h1 className="HeadingMap">MapView</h1>
+    </div>
     <ClientList className="ClientList" />
 
+    </div>
     </div>
   );
 }

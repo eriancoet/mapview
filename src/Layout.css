@@ -20,4 +20,23 @@
     /* Add any additional styling for your map here */
 }
 
+/* Layout.css */
+
+.Map {
+    position: relative;
+    /* Other styling for your map */
+  }
+  
+  .HeadingMap {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 30%; /* Adjust as needed */
+    z-index: 10; /* Ensure it's above the map */
+    color: white; /* Or any color that contrasts well with your map */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: for better visibility */
+    padding: 5px; /* Optional, for styling */
+    border-radius: 5px; /* Optional, for styling */
+  }
+  
+
 

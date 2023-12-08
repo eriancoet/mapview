@@ -2,7 +2,7 @@ import React from "react";
 import './Navbar.css';
 import Navbar from './Navbar';
 import './Layout.css'; 
-
+import './Home.css';
 
 
 function Home() {
