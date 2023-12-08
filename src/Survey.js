@@ -2,10 +2,10 @@ import React from "react";
 import './Navbar.css';
 import Navbar from './Navbar';
 import './Layout.css'; 
-import SurveyMain from './Survey';
+import SurveyMain from './SurveyMain';
 
 
-function Home() {
+function Survey() {
   return (
     <div className="layout-container">
     <Navbar className="Navbar" />    
@@ -13,9 +13,8 @@ function Home() {
   
 
     </div>
-
-   
+  
  )
 }
 
-export default Home;
+export default Survey;
