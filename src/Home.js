@@ -1,8 +1,6 @@
 import React from "react";
 import './Navbar.css';
 import Navbar from './Navbar';
-import Map from './Map';
-import ClientList from './ClientList';
 import './Layout.css'; 
 
 
