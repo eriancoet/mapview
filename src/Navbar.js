@@ -12,7 +12,7 @@ function Navbar() {
 
     return (
         <>
-            <button onClick={toggleNavbar} className="toggle-button">
+               <button onClick={toggleNavbar} className="toggle-button">
                 {/* Here you can add an icon or text for the toggle button */}
             </button>
             <nav className={`navbar ${isActive ? 'active' : 'inactive'}`}>
@@ -38,6 +38,7 @@ function Navbar() {
                         <NavLink to="/Account" activeClassName="active">Account</NavLink>
                     </li>
                 </ul>
+            
             </nav>
         </>
     );
