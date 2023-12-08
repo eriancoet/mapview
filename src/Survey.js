@@ -1,19 +1,21 @@
 import React from "react";
-import Navbar from './Navbar'; // Assuming this is your navigation component
-import Map from './Map'; // Your Google Map component
-import './Layout.css'; // CSS file for layout styling
-import ClientList from './ClientList';// Assuming Navbar is in the same directory
+import './Navbar.css';
+import Navbar from './Navbar';
+import './Layout.css'; 
+import SurveyMain from './SurveyMain';
 
-function Survey() {
+
+function Home() {
   return (
     <div className="layout-container">
-    <Navbar className="Navbar" /> 
-   
-
-    <ClientList className="ClientList" />
+    <Navbar className="Navbar" />    
+    <SurveyMain />
+  
 
     </div>
-  );
+
+   
+ )
 }
 
-export default Survey;
+export default Home;
