@@ -6,6 +6,14 @@
     gap: 1rem;
 }
 
+/* ClientList.css */
+
+.grid-item img {
+    width: 20px; /* Adjust size as needed */
+    height: auto;
+    /* Add any additional styling here */
+  }
+  
 
 
 /* Responsive styles for mobile screens */
