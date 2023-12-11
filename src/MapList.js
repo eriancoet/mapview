@@ -6,14 +6,23 @@ import ClientList from './ClientList';
 
 function MapList() {
   return (
+    <div>
+  
     <div className="layout-container">
+  
     <Navbar className="Navbar" /> 
-   
+  
     <Map className="Map" />
+    <div>
+    <h1 className="HeadingMap">Map List</h1>
+    </div>
     <ClientList className="ClientList" />
 
     </div>
+    </div>
   );
 }
+
+
 
 export default MapList;

@@ -1,20 +1,22 @@
 import React from "react";
 import Navbar from './Navbar'; // Assuming this is your navigation component
-import './Layout.css'; // CSS file for layout styling
+import './tasklist.css'; // CSS file for layout styling
 import ClientList from './ClientList';
 
 
-
-function Dashboard() {
+function DataCaptureList() {
   return (
     <div className="layout-container">
-    <Navbar className="Navbar" /> 
-   
+      <Navbar className="Navbar" /> 
 
-    <ClientList className="ClientList" />
-
+      <div className="content-container">
+        <h1>Data Capture List</h1>
+        <ClientList className="ClientList" />
+      </div>
     </div>
   );
 }
 
-export default Dashboard;
+
+export default DataCaptureList;
+

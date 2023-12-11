@@ -14,7 +14,7 @@ function Layout() {
   
     <Map className="Map" />
     <div>
-    <h1 className="HeadingMap">MapView</h1>
+    <h1 className="HeadingMap">Map View</h1>
     </div>
     <ClientList className="ClientList" />
 
