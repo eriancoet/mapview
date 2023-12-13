@@ -1,0 +1,25 @@
+.layout-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* full height of the viewport */
+}
+
+.Navbar {
+    flex: 0 0 200px; /* Adjust the width as needed */
+    height: 100%; /* Full height */
+    /* Add additional styling for the navbar */
+}
+
+.content-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+

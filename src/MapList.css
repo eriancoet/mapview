@@ -1,0 +1,35 @@
+.layout-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr; /* 3 columns: navbar, map, and client list */
+    grid-template-rows: auto 1fr; /* 2 rows: heading and the rest */
+    height: 100vh;
+    grid-template-areas: 
+      "navbar heading heading"
+      "navbar map list";
+}
+
+.Navbar {
+    grid-area: navbar;
+    /* Additional styles for navbar */
+}
+
+.content-container {
+    display: grid;
+    grid-area: content;
+    padding: 20px;
+}
+
+h1 {
+    grid-area: heading;
+    text-align: center;
+}
+
+.ClientList {
+    grid-area: list;
+    /* Styles for your ClientList */
+}
+
+.Map {
+    grid-area: map;
+    /* Styles for your Map component */
+}

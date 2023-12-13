@@ -1,0 +1,31 @@
+.profile-popup-backdrop {
+    position: fixed; /* Fixed relative to the viewport */
+    top: 0;
+    right: 0; /* Align to the right side */
+    bottom: 0;
+    width: 30%; /* Adjust the width as needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Set the backdrop with 80% opacity */
+    z-index: 1000; /* Ensure it's above other elements */
+    display: flex;
+    justify-content: center; /* Horizontally center within the given width */
+    align-items: center; /* Vertically center */
+}
+
+.profile-popup {
+    width: 100%; /* Make the popup fill the backdrop */
+    height: auto; /* Adjust height as needed */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0.8; /* Set the opacity of the popup */
+}
+
+.profile-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}

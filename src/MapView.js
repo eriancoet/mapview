@@ -7,7 +7,7 @@ import './MapView.css'; // Import your new CSS file
 function MapView() {
   return (
     <div className="map-view-container">
-        <h1>MapView</h1>
+        <h1>Map View</h1>
         <div className="content">
             <Map />
             <ClientList />

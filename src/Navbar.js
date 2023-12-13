@@ -2,13 +2,22 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 import ideaImage from './idea.png'; // Import the image
+import profileImage from './profile.png';
+import ProfilePopup from './ProfilePopup'; // Import the profile popup component
+import ProfileData from './ProfileData'; 
 
 function Navbar() {
-    const [isActive, setIsActive] = useState(true); // State to manage whether the navbar is active
+    const [isActive, setIsActive] = useState(true);
+    const [isProfilePopupOpen, setProfilePopupOpen] = useState(false);
 
     const toggleNavbar = () => {
-        setIsActive(!isActive); // Function to toggle the navbar state
+        setIsActive(!isActive);
     };
+
+    const toggleProfilePopup = () => {
+        setProfilePopupOpen(!isProfilePopupOpen);
+    };
+
 
     return (
         <>
@@ -30,15 +39,24 @@ function Navbar() {
                     <li className='nav-item'><NavLink to="/MapList" activeClassName="active">Map List</NavLink></li>
                     <li className='nav-item'><NavLink to="/TaskList" activeClassName="active">Task List</NavLink></li>
                 </ul>
+               
+
                 <ul className="BottomMenu">
-                    <li>
-                        <NavLink to="/Profile" activeClassName="active">Profile Icon</NavLink>
-                    </li>
+                <li>
+                    <button onClick={toggleProfilePopup} style={{ background: 'none', border: 'none' }}>
+                        <img src={profileImage} alt="profile" style={{ height: '4rem' }} />
+                    </button>
+                    <ProfilePopup 
+                isOpen={isProfilePopupOpen} 
+                onClose={toggleProfilePopup} 
+                profileData={ProfileData}
+            />
+                </li>
                     <li>
                         <NavLink to="/Account" activeClassName="active">Account</NavLink>
                     </li>
                 </ul>
-            
+                <ProfilePopup isOpen={isProfilePopupOpen} onClose={toggleProfilePopup} />
             </nav>
         </>
     );
