@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
-import ideaImage from './idea.png'; // Import the image
+import ideaImage from './idea.png';
 import profileImage from './profile.png';
-import ProfilePopup from './ProfilePopup'; // Import the profile popup component
-import ProfileData from './ProfileData'; 
+import navIcon from './nav.png'; // Import the nav icon
+import ProfilePopup from './ProfilePopup';
+import ProfileData from './ProfileData';
+import navClosedIcon from './nav-Closed.png'; // Import the closed icon
+
 
 function Navbar() {
     const [isActive, setIsActive] = useState(true);
@@ -22,7 +25,8 @@ function Navbar() {
     return (
         <>
                <button onClick={toggleNavbar} className="toggle-button">
-                {/* Here you can add an icon or text for the toggle button */}
+               <img src={isActive ? navIcon : navClosedIcon} alt="Toggle Menu" style={{ height: '3rem' }} />
+
             </button>
             <nav className={`navbar ${isActive ? 'active' : 'inactive'}`}>
                 <ul className='nav-list'>
@@ -38,6 +42,7 @@ function Navbar() {
                     <li className='nav-item'><NavLink to="/Layout" activeClassName="active">Map View</NavLink></li>
                     <li className='nav-item'><NavLink to="/MapList" activeClassName="active">Map List</NavLink></li>
                     <li className='nav-item'><NavLink to="/TaskList" activeClassName="active">Task List</NavLink></li>
+                    <li className='nav-item'><NavLink to="/Contacts" activeClassName="active">Contacts</NavLink></li>
                 </ul>
                
 
@@ -63,3 +68,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
+

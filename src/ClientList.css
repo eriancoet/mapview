@@ -1,29 +1,33 @@
-/* Existing styles for larger screens */
-.grid-container {
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-}
-
 /* ClientList.css */
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 70px;
+    padding: 10px;
+}
+
+.grid-item {
+    display: flex; /* Ensures content in grid-item is aligned */
+    align-items: center; /* Vertically centers the content */
+    justify-content: start; /* Aligns content to the start */
+    overflow: hidden; /* Prevents content from overflowing */
+}
+
 .grid-item img {
-    width: 20px; /* Adjust size as needed */
+    width: 20px;
     height: auto;
-    /* Add any additional styling here */
-  }
-  
+    margin-right: 5px; /* Adds a little space after the image */
+}
 
-
-/* Responsive styles for mobile screens */
 @media screen and (max-width: 600px) {
     .grid-container {
         grid-template-columns: 1fr; /* Single column layout */
     }
 
     .grid-heading, .grid-item {
-        text-align: left; /* Adjust text alignment as needed */
-        padding: 1rem; /* Adjust padding as needed */
+        text-align: left;
+        padding: 1rem;
     }
 }

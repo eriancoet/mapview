@@ -1,5 +1,5 @@
 .profile-popup-backdrop {
-    position: fixed; /* Fixed relative to the viewport */
+    position: absolute; /* Fixed relative to the viewport */
     top: 0;
     right: 0; /* Align to the right side */
     bottom: 0;

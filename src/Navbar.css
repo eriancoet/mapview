@@ -2,18 +2,40 @@
 .navbar {
   height: 100vh;
   width: 250px;
-  position: static; /* Changed from static */
+  position: relative; /* Changed from static */
   left: 0;
   top: 0;
   overflow-y: auto;
   background-color: #333;
   padding: 10px; 
-  transition: all 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease; 
+  /* Smooth transitions for transform and opacity */
 }
 
 .navbar.active {
   transform: translateX(0); /* Ensure it's fully visible */
   opacity: 1;
+}
+
+
+
+
+.toggle-button {
+  position: fixed; /* Keep the button fixed relative to the viewport */
+  top: 0.1rem; /* Adjust vertical position as needed */
+  z-index: 2; /* Ensure it's above other elements */
+  transition: left 0.5s ease; /* Smooth transition for horizontal movement */
+  /* Additional styling as needed */
+}
+
+/* Position the toggle button on the side of the viewport */
+.toggle-button {
+  left: 0; /* Start at the edge of the screen */
+}
+
+/* Move the toggle button to the right when the navbar is active */
+.navbar.active + .toggle-button {
+  left: 250px; /* Adjust to the width of the navbar */
 }
 
 .navbar.inactive {
@@ -23,15 +45,10 @@
   overflow: hidden;
 }
 
-/* ... rest of your styles ... */
-
-.toggle-button {
-  position: fixed;
-  top: 1rem;
-  left: 10px;
-  z-index: 1001;
-  /* Additional styling as needed */
+.navbar.active + .toggle-button {
+  left: 250px; /* Move the button to the right by the width of the navbar */
 }
+
 
 .nav-item {
   color: rgb(3, 146, 249); /* Sets default link color to white */

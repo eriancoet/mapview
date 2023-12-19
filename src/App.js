@@ -7,6 +7,7 @@ import DataCaptureList from './DataCaptureList';
 import Layout from './Layout';
 import MapList from './MapList';
 import TaskList from './TaskList';
+import Contacts from './Contacts';
 import './Layout.css';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path='/Layout' element={<Layout />} />
           <Route path='/MapList' element={<MapList />} />
           <Route path='/TaskList' element={<TaskList />} />
+          <Route path='/Contacts' element={<Contacts />} />
          
         </Routes>
       </BrowserRouter>
