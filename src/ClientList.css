@@ -1,11 +1,8 @@
 /* ClientList.css */
-
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-top: 70px;
-    padding: 10px;
+    grid-template-columns: repeat(4, 1fr); /* Adjust as needed */
+    grid-gap: 10px; /* Adjust as needed */
 }
 
 .grid-item {

@@ -18,6 +18,7 @@ const data = [
   // ... other data entries
 ];
 
+
 function ClientList() {
   function openGoogleMapsDirections(address) {
     const baseUrl = 'https://www.google.com/maps/dir/?api=1';
@@ -54,6 +55,3 @@ function ClientList() {
 }
 
 export default ClientList;
-
-
-
