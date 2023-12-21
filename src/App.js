@@ -8,7 +8,7 @@ import Layout from './Layout';
 import MapList from './MapList';
 import TaskList from './TaskList';
 import Contacts from './Contacts';
-import './Layout.css';
+import './styles/Layout.css';
 
 function App() {
   return (

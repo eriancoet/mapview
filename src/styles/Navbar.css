@@ -2,13 +2,14 @@
 .navbar {
   height: 100vh;
   width: 250px;
-  position: relative; /* Changed from static */
+  position: fixed; /* Changed from static */
   left: 0;
   top: 0;
   overflow-y: auto;
+  z-index: 10;
   background-color: #333;
   padding: 10px; 
-  transition: transform 0.5s ease, opacity 0.5s ease; 
+  transition: transform 0.5s ease, opacity 0.7s ease; 
   /* Smooth transitions for transform and opacity */
 }
 
@@ -21,21 +22,27 @@
 
 
 .toggle-button {
-  position: absolute; /* Keep the button fixed relative to the viewport */
-  top: 0.1rem;
-  padding: 10px; /* Adjust vertical position as needed */
-  z-index: 2;
-  left: 0; /* Ensure it's above other elements */
-  transition: left 0.5s ease; /* Smooth transition for horizontal movement */
-  /* Additional styling as needed */
+  position: absolute;
+  z-index: 10; /* Adjust as needed */
+
+  /* Adjust these values based on your layout */
+  top: 10px;
+  left: 0;
+  transition: left 0.5s ease; /* Example transition */
 }
 
-
-
-/* Move the toggle button to the right when the navbar is active */
 .navbar.active + .toggle-button {
-  left: 250px; /* Adjust to the width of the navbar */
+  left: 200px; /* Adjust this value to match your sidebar's width */
 }
+
+.toggle-button img {
+  height: 2rem; /* Adjust the height as needed */
+  width: 1rem;  /* Adjust the width as needed */
+  object-fit: contain;
+  z-index: 10; /* Adjust as needed */
+  /* This ensures the image is resized within the given dimensions without distortion */
+}
+
 
 .navbar.inactive {
   width: 250px; /* Keep the width the same to maintain structure */

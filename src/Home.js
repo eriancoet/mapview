@@ -1,8 +1,8 @@
 import React from "react";
-import './Navbar.css';
+import './styles/Navbar.css';
 import Navbar from './Navbar';
-import './Layout.css'; 
-import './Home.css';
+import './styles/Layout.css'; 
+import './styles/Home.css';
 
 
 function Home() {

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import './Navbar.css';
-import profileImage from './profile.png';
-import navIcon from './nav.png'; // Import the nav icon
-import navClosedIcon from './nav-Closed.png'; // Import the closed icon
+import './styles/Navbar.css';
+import profileImage from './Images/profile.png';
+import navIcon from './Images/nav.png'; // Import the nav icon
+import navClosedIcon from './Images/nav-Closed.png'; // Import the closed icon
 import Modal from './Modal'; // Import Modal component
 
 function Navbar() {
@@ -21,10 +21,8 @@ function Navbar() {
 
     return (
         <>
-            <button onClick={toggleNavbar} className="toggle-button">
-                <img src={isActive ? navIcon : navClosedIcon} alt="Toggle Menu" style={{ height: '1.5rem' }} />
-            </button>
-            <nav className={`navbar ${isActive ? 'active' : 'inactive'}`}>
+            
+        <nav className={`navbar ${isActive ? 'active' : 'inactive'}`}>
                 <ul className='nav-list'>
                 
                 <li className='nav-item'><NavLink to="/" exact activeClassName="active">Home</NavLink></li>
@@ -52,6 +50,10 @@ function Navbar() {
                     {/* Other modal content */}
                 </Modal>
             </nav>
+            <button onClick={toggleNavbar} className={`toggle-button ${isActive ? '' : 'collapsed'}`}>
+    <img src={isActive ? navIcon : navClosedIcon} alt="Toggle Menu" />
+</button>
+
         </>
     );
 }

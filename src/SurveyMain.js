@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './Survey.css';
-import './Home.css';
+import './styles/Survey.css';
+import './styles/Home.css';
 
 function SurveyForm() {
     const [formData, setFormData] = useState({

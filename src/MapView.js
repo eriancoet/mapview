@@ -1,8 +1,8 @@
 import React from "react";
 import Map from './Map';
-import './Navbar.css';
+import './styles/Navbar.css';
 import ClientList from './ClientList';
-import './MapView.css'; // Import your new CSS file
+import './styles/MapView.css'; // Import your new CSS file
 
 function MapView() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Modal.css'; // Import your modal CSS
+import './styles/Modal.css'; // Import your modal CSS
 
 function Modal({ isOpen, onClose, children }) {
   if (!isOpen) return null;

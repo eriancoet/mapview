@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Contacts.css';
-import houseIcon from './home.png'; // Ensure this is the correct path to your house icon
-import fileIcon from './document.png'; // Ensure this is the correct path to your file icon
+import './styles/Contacts.css';
+import houseIcon from './Images/home.png'; // Ensure this is the correct path to your house icon
+import fileIcon from './Images/document.png'; // Ensure this is the correct path to your file icon
 
 const data = [
     {

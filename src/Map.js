@@ -1,6 +1,6 @@
 import React from 'react';
-import markerImage1 from './location.png'; // First marker image
-import markerImage2 from './check-mark.png'; // Second marker image
+import markerImage1 from './Images/location.png'; // First marker image
+import markerImage2 from './Images/check-mark.png'; // Second marker image
 import GoogleMapReact from 'google-map-react'; 
 
 

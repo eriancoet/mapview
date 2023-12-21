@@ -8,10 +8,7 @@
       "navbar map list";
 }
 
-.Navbar {
-    grid-area: navbar;
-    /* Additional styles for navbar */
-}
+
 
 .content-container {
     display: grid;

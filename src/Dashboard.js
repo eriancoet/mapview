@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from './Navbar'; // Assuming this is your navigation component
-import './Layout.css'; // CSS file for layout styling
+import './styles/Layout.css'; // CSS file for layout styling
 
 function Dashboard() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import './ClientList.css'; // Import the CSS for styling
-import icon from './icon.png';
+import './styles/ClientList.css'; // Import the CSS for styling
+import icon from './Images/icon.png';
 
 
 const data = [
@@ -29,7 +29,7 @@ function ClientList() {
   }
 
   return (
-    <div className="grid-container">
+    <div className="grid-container1">
       <div className="grid-heading">Name</div>
       <div className="grid-heading">Address</div>
       <div className="grid-heading">Directions</div>
