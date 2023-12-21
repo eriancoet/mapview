@@ -85,15 +85,20 @@
 /* Additional styles for links if needed */
 .navbar ul li a {
   text-decoration: none; /* Removes underline from links */
-  color: rgb(56, 126, 246); /* Sets text color */
+  color: rgb(113, 160, 191); /* Sets text color */
   display: block; /* Makes the entire area of the list item clickable */
   padding: 5px; /* Adds padding for better clickability and visual appeal */
 }
 
 .BottomMenu {
   position: fixed;
-  bottom: 3rem;
-  left: 0;
-  width: 100%;
+  bottom: 2rem;
+  left: 1.5rem;
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  margin-top: 5rem; 
+  /* Removes default margin */
+  width: 200px;
+  color: lightblue; 
 
 }
