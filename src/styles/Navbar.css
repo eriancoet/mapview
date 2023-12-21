@@ -33,7 +33,7 @@
 }
 
 .navbar.active + .toggle-button {
-  left: 200px; /* Adjust this value to match your sidebar's width */
+  left: 190px; /* Adjust this value to match your sidebar's width */
 }
 
 .toggle-button img {
