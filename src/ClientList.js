@@ -2,7 +2,7 @@ import React from "react";
 import './styles/ClientList.css'; // Import the CSS for styling
 import icon from './Images/icon.png';
 
-
+// data
 const data = [
   { name: 'John Doe', address: 'Albert road, woodstock', lastSeen: '2023-01-01', directions: './icon.png' },
   { name: 'Jane Smith', address: "Albert road, woodstock", hits: 2, lastSeen: '2023-01-02', directions: './icon.png' },
